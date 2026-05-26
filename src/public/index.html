@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de funcionarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Gestão de Funcionários</h1>
+        </header>
+
+        <section class="form-section">
+            <h2>Cadastrar / Atualizar Funcionários</h2>
+            <form id="funcionarioForm">
+                <input type="hidden" id="id">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="cargo" placeholder="Cargo" required>
+                <input type="text" id="salario" placeholder="Salario" required>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Funcionarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Cargo</th>
+                        <th>Salário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-funcionarios"></tbody>
+            </table>
+        </section>
+        <footer>
+            <p>2026 Sistema de Funcionários | Desenvolvido por Matheus Montagnini</p>
+        </footer>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
